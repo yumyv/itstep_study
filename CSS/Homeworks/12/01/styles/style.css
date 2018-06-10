@@ -227,7 +227,6 @@ header .logo {
     border-bottom: 70px solid transparent;
     border-left: 70px solid transparent;
     position: absolute;
-    cursor: pointer;
 }
 
 #studio .studioContainer {
@@ -369,7 +368,7 @@ header .logo {
     }
 
     #studio .rightBar {
-        top: 55%;
+        top: 50%;
     }
 
     #studio .studioContainer .studioGallery {
@@ -387,9 +386,6 @@ header .logo {
 }
 
 @media screen and (max-width: 700px) {
-    #studio .rightBar {
-        display: none;
-    }
 
     #studio .studioContainer .studioGallery .rectanglePic {
         transform: rotateZ(45deg) scale(0.6);

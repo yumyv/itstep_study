@@ -1,0 +1,5 @@
+body {
+	background-image: linear-gradient(to bottom right, red 50%, transparent 50%), url("../images/bg.jpg");
+	background-size: 100px 100px, auto;
+	background-repeat: repeat-y, no-repeat;
+}

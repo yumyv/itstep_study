@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    min-width: 960px;
+    position: relative;
+}
+
+/*header*/
+#navHead {
+    width: 20%;
+    height: 60px;
+    background: #2286c3;
+    text-align: center;
+    float: left;
+    user-select: none;
+}
+
+#navHead p {
+    line-height: 60px;
+    font-size: 120%;
+    font-weight: bold;
+    color: white;
+    display: inline;
+}
+
+#navHead span {
+    font-weight: normal;
+}
+
+header {
+    width: 80%;
+    height: 60px;
+    padding: 13px;
+    background: #64b5f6;
+    float: right;
+    overflow: auto;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header .headerMenu {
+    float: right;
+}
+
+header .headerMenu span {
+    padding-left: 25px;
+}
+
+header .headerMenu span a {
+    text-decoration: none;
+}
+
+header .headerMenu span img {
+    width: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+header .headerMenu span p {
+    margin: 0;
+    vertical-align: middle;
+    padding-left: 15px;
+    color: white;
+    display: inline-block;
+}
+
+/*container*/
+#container {
+    width: 100%;
+    background: #37474f;
+    overflow: auto;
+}
+
+/*navigation*/
+.burger {
+    top: 13px;
+    left: 22%;
+    width: 30px;
+    height: 30px;
+    background: url("../images/burger.png"), no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+    position: absolute;
+}
+
+#burger {
+    top: 13px;
+    left: 22%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    user-select: none;
+}
+
+nav .adminHead {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+nav .adminHead img {
+    width: 60px;
+    float: left;
+}
+
+nav .adminHead p {
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;
+    display: inline-block;
+}
+
+nav .adminHead .online {
+    width: 50%;
+    display: inline-block;
+}
+
+nav .adminHead .online img {
+    width: 10px;
+    margin-left: 7px;
+    padding: 3px;
+    display: inline-block;
+}
+
+nav .adminHead .online p {
+    margin: 0;
+}
+
+nav .navName {
+    width: 100%;
+    padding: 15px;
+    background: #212121;
+    box-sizing: border-box;
+}
+
+nav .navName p {
+    margin: 0;
+    color: #9e9e9e;
+    text-transform: uppercase;
+}
+
+nav .navigation {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+nav .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav .navigation ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .navigation ul img {
+    width: 30px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+nav .navigation ul p {
+    margin: 0 0 0 10px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+nav .navigation ul span {
+    top: 10px;
+    float: right;
+    position: relative;
+}
+
+nav .navigation li {
+    margin-bottom: 20px;
+}
+
+/*content*/
+#content {
+    width: 80%;
+    background: #e0e0e0;
+    float: right;
+}
+
+#content .heading {
+    padding: 13px;
+    overflow: auto;
+}
+
+#content .heading h1 {
+    margin: 0;
+    font-size: 150%;
+    font-weight: normal;
+    float: left;
+}
+
+#content .heading .headingMenu {
+    float: right;
+    user-select: none;
+}
+
+#content .heading .headingMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content .heading .headingMenu ul img {
+    width: 15px;
+}
+
+#content .heading .headingMenu ul span {
+    margin: 0 10px;
+}
+
+#content .heading .headingMenu ul p {
+    display: inline;
+}
+
+#content .heading .headingMenu ul p a {
+    color: black;
+}
+
+#content .heading .headingMenu ul a {
+    color: #616161;
+    text-decoration: none;
+}
+
+#content .heading .headingMenu li {
+    display: inline;
+}
+
+#content #forms {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#content #forms h2 {
+    margin: 0;
+    font-size: 130%;
+    font-weight: normal;
+}
+
+#content #forms form {
+    width: 47%;
+    margin: 5px 0 25px 15px;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    background: white;
+    border-top: 3px solid #cfcfcf;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#content #forms form ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content #forms form ul p {
+    font-weight: bold;
+}
+
+#content #forms form ul input {
+    width: 100%;
+}
+
+#content #forms form ul input[placeholder] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#content #forms form .file {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#content #forms form .file + label {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #64b5f6;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#content #forms form .submit {
+    margin-bottom: 0;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#content #forms form input[type=submit] {
+    border: none;
+    padding: 10px;
+    background: #64b5f6;
+    color: white;
+    cursor: pointer;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #64b5f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer span {
+    float: right;
+}
+
+@media (max-width: 960px) {
+    main {
+        min-width: 360px;
+    }
+
+    /*header*/
+    #navHead {
+        width: 30%;
+    }
+
+    header {
+        width: 70%;
+    }
+
+    header .headerMenu span {
+        padding-left: 10px;
+    }
+
+    /*navigation*/
+    .burger {
+        left: 32%;
+    }
+
+    #burger {
+        left: 32%;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    nav #AdminHead p {
+        margin-top: 5px;
+    }
+
+    nav #AdminHead img {
+        width: 50px;
+    }
+
+    /*content*/
+    #content {
+        width: 70%;
+    }
+
+    #content .heading h1 {
+        float: none;
+    }
+
+    #content .heading .headingMenu {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        background: #b0bec5;
+        display: block;
+        float: none;
+        box-sizing: border-box;
+    }
+
+    #content #forms {
+        padding: 13px;
+        box-sizing: border-box;
+    }
+
+    #content #forms form {
+        width: 100%;
+        margin: 13px 0 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /*header*/
+    #navHead {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    /*navigation*/
+    .burger {
+        top: 75px;
+        left: 2%;
+    }
+
+    #burger {
+        top: 75px;
+        left: 2%;
+    }
+
+    #burger:checked + nav {
+        width: 100%;
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*content*/
+    #content {
+        width: 100%;
+    }
+}

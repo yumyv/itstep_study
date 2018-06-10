@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+}
+p.hello {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	font-size: 36pt;
+}
+.abst {
+	width: 800px;
+	height: 600px;
+	background-image:
+	    linear-gradient(to bottom right, #ccc 50%, transparent 50%),
+	    linear-gradient(to bottom left, #ccc 50%, transparent 50%),
+	    linear-gradient(to bottom right, rgba(255, 145, 0, 0.746) 50%, transparent 50%),
+		linear-gradient(to top right, #ccc 50%, transparent 50%),
+		linear-gradient(to top left, #ccc 50%, transparent 50%),
+		linear-gradient(to top left, rgba(255, 145, 0, 0.746) 50%, transparent 50%);
+	background-size: 400px 400px, 400px 400px, 400px 400px, 400px 200px, 400px 200px, 600px 200px;
+	background-repeat: no-repeat;
+	background-position: right bottom, left bottom, left bottom, left top, right top, right top;
+}
+.grads {
+	margin: 50px;
+	width: 1300px;
+}
+.grads .grad1 {
+	margin: 50px;
+	width: 500px;
+	height: 500px;
+	background-image:
+	radial-gradient(circle closest-side, white 100%, transparent 100%),
+	radial-gradient(circle closest-side, black 100%, transparent 100%),
+	radial-gradient(circle closest-side, #b2ebf2 100%, transparent 100%),
+	radial-gradient(circle closest-side, white 100%, transparent 100%),
+	radial-gradient(circle closest-side, black 100%, transparent 100%),
+	radial-gradient(circle closest-side, #000035 100%, transparent 100%);
+	background-size: 5% 5%, 15% 15%, 43% 43%, 55% 55%, 65% 65%, 90% 90%;
+	background-position:45% 52%, 50% 57%, 50% 57%, 50% 57%, 50% 50%, 50% 50%;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.grads .grad2 {
+	margin: 50px;
+	width: 500px;
+	height: 500px;
+	background-image: 
+	radial-gradient(circle closest-side, black 10%, transparent 90%),
+	radial-gradient(circle closest-side, transparent 10%, black 95%, transparent 100%),
+	url(../images/eye2.png),
+	radial-gradient(circle closest-side, transparent 60%, #e57373 80%),
+	url(../images/eye1.jpg);
+	background-size: 50% 50%, 50% 50%, 45% 45%, 100% 100%, contain;
+	background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.grads .grad3 {
+	margin: 50px;
+	width: 500px;
+	height: 500px;
+	background-image: 
+	linear-gradient(to top left, transparent 50%, #63a4ff 50%),
+	linear-gradient(to top left, transparent 50%, #1976d2 50%),
+	linear-gradient(to top right, transparent 50%, #5e92f3 50%),
+	linear-gradient(to top right, transparent 50%, #1565c0 50%),
+	linear-gradient(to bottom left, transparent 50%, #5e92f3 50%),
+	linear-gradient(to bottom left, transparent 50%, #1565c0 50%),
+	linear-gradient(to bottom right, transparent 50%, #63a4ff 50%),
+	linear-gradient(to bottom right, transparent 50%, #1976d2 50%);
+	background-size: 200px 200px, 250px 250px, 200px 200px, 250px 250px, 200px 200px, 250px 250px, 200px 200px, 250px 250px;
+	background-position: 250px 250px, bottom right, 50px 250px ,bottom left ,250px 50px, top right, 50px 50px, top left;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.grads .grad4 {
+	margin: 50px;
+	width: 500px;
+	height: 500px;
+	background-image: 
+	linear-gradient(to right, #4fc3f7 50%, #8bf6ff 50%);
+	background-size: 30px;
+	display: inline-block;
+}

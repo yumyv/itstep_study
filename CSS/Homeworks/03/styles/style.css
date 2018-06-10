@@ -1,0 +1,84 @@
+body {
+	background: #bdbdbd;
+	font-family: Helvetica, Arial, sans-serif;
+}
+#header {
+	width: 1200px;
+	background: #00796b;
+	margin: auto;
+	text-align: right;
+}
+#header .title {
+	padding: 20px 20px 0px 20px;
+	text-align: left;
+}
+#header .title .logo {
+	width: 100px;
+	height: 100px;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	display: inline-block;
+}
+#header .title h1{
+	color: white;
+	font-size: 36px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: inline-block;
+}
+#header .menu {
+	background: #004c40;
+	padding: 10px 20px 10px 20px;
+	margin-right: 50px;
+	display: inline-block;
+}
+#header .menu a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header .menu_element {
+	margin: 20px;
+	color: white;
+	font-size: 20px;
+}
+#main {
+	width: 1200px;
+	background: white;
+	margin: auto;
+}
+#main .gallery {
+	padding: 10px;
+	margin: 20px;
+	background: #e0f7fa;
+	overflow: auto;
+	display: inline-block;
+}
+#main .gallery .img {
+	float: left;
+}
+#main .gallery .img img {
+	margin: 10px;
+	width: 300px;
+}
+#main .gallery .text p {
+	margin: 10px;
+	text-align: justify;
+	font-size: 18px;
+}
+#footer {
+	width: 1200px;
+	height: 100px;
+	background: #004c40;
+	text-align: center;
+	margin: auto;
+}
+#footer p {
+	color: white;
+	font-size: 20px;
+	line-height: 100px;
+	margin: 0px;
+}

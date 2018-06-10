@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Admin panel</title>
+</head>
+<body>
+<main>
+    <!--header-->
+    <div id="globalHead">
+        <div id="navHead">
+            <p>Innovations<span>ADM</span></p>
+        </div>
+        <header>
+            <div class="headerMenu">
+                <span><a href="#"><img src="images/gift.png" alt="gift_box"><span
+                        class="number gift">348</span></a></span>
+                <span><a href="#"><img src="images/users.png" alt="users"><span class="number users">3</span></a></span>
+                <span><a href="#"><img src="images/profile.png" alt="profile"><span
+                        class="number profile">125</span></a></span>
+                <span><a href="#"><img src="images/admin.png" alt="admin"><p>Administrator</p></a></span>
+            </div>
+        </header>
+    </div>
+    <!--container-->
+    <div id="container">
+        <!--navigation-->
+        <button class="burger"></button>
+        <label for="burger"></label>
+        <input type="checkbox" id="burger">
+        <nav>
+            <div class="adminHead">
+                <img src="images/admin.png" alt="admin">
+                <p>Administrator</p>
+                <div class="online"><img src="images/online.png" alt="online">
+                    <p>Online</p></div>
+            </div>
+            <div class="navName">
+                <p>Main navigation</p>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#"><img src="images/profile.png" alt="profile">
+                        <p>Admins</p><span><</span></a></li>
+                    <li><a href="#"><img src="images/users.png" alt="users">
+                        <p>Users</p><span><</span></a></li>
+                    <li><a href="#"><img src="images/cards.png" alt="cards">
+                        <p>Cards</p><span><</span></a></li>
+                    <li><a href="#"><img src="images/categories.png" alt="categories">
+                        <p>Categories</p><span><</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--content-->
+        <div id="content">
+            <div class="heading">
+                <h1>Profile</h1>
+                <div class="headingMenu">
+                    <ul>
+                        <li>
+                            <img src="images/profile_black.png" alt="profile">
+                            <p><a href="#">Admin</a></p>
+                        </li>
+                        <span>></span>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="forms">
+                <form action="#" method="GET">
+                    <h2>Edit Username</h2>
+                    <ul>
+                        <li>
+                            <p><label for="username">New username</label></p>
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <span class="element dots"></span>
+                        </li>
+                        <li>
+                            <p><label for="usernamePass">Password</label></p>
+                            <input type="password" name="password" id="usernamePass" placeholder="Password" required>
+                            <span class="element dots"></span>
+                        </li>
+                    </ul>
+                    <p class="submit"><input type="submit"></p>
+                </form>
+                <form action="#" method="GET">
+                    <h2>Edit Email</h2>
+                    <ul>
+                        <li>
+                            <p><label for="email">New Email</label></p>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </li>
+                        <li>
+                            <p><label for="emailPass">Password</label></p>
+                            <input type="password" name="password" id="emailPass" placeholder="Password" required>
+                            <span class="element refresh"></span>
+                        </li>
+                    </ul>
+                    <p class="submit"><input type="submit"></p>
+                </form>
+                <form action="#" method="GET">
+                    <h2>Edit Password</h2>
+                    <ul>
+                        <li>
+                            <p><label for="pass">Old password</label></p>
+                            <input type="password" name="password" id="pass" placeholder="Password" required>
+                            <span class="element dots"></span>
+                        </li>
+                        <li>
+                            <p><label for="newPass">New password</label></p>
+                            <input type="password" name="newPassword" id="newPass" placeholder="Password" required>
+                            <span class="element refresh"></span>
+                        </li>
+                        <li>
+                            <p><label for="confPass">Confirm password</label></p>
+                            <input type="password" name="newPassword" id="confPass" placeholder="Password" required>
+                            <span class="element refresh"></span>
+                        </li>
+                    </ul>
+                    <p class="submit"><input type="submit"></p>
+                </form>
+                <form action="#" method="GET">
+                    <h2>Edit Image</h2>
+                    <ul>
+                        <li>
+                            <input class="file" type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
+                            <label for="image">Please open the image</label>
+                        </li>
+                    </ul>
+                    <p class="submit"><input type="submit"></p>
+                </form>
+            </div>
+            <!--footer-->
+            <footer>
+                <p>Develop by <a href="#">onCreate Studio</a> 2015.<span>Version 1.0</span></p>
+            </footer>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/background.png");
+    background-size: cover;
+    position: relative;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-size: 300% 300%;
+    background-image: url("../images/desktop.png");
+    position: relative;
+}
+.icon p {
+    color: white;
+    bottom: -10px;
+    left: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    position: absolute;
+}
+.one {
+    background-position: -200% 0;
+}
+.panel {
+    text-align: center;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    position: absolute;
+}
+.panel:before {
+    content: "";
+    position: absolute;
+    background: #536dfe;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(83, 109, 254, 0.9);
+    border-radius: 20px;
+    filter: brightness(3) opacity(0.2);
+}
+.panel .icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+.panel .two {
+    background-position: 0 -100%;
+}
+.panel .three {
+    background-position: -100% -100%;
+}
+.panel .four {
+     background-position: -200% -100%;
+ }
+.panel .five {
+    background-position: 0 -200%;
+}
+.panel .six {
+    background-position: -100% -200%;
+}
+.panel .seven {
+    background-position: -200% -100%;
+}
+
+

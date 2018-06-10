@@ -1,0 +1,117 @@
+body {
+    margin: 0 auto;
+}
+.portfolio {
+    max-width: 1350px;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.portfolio .img {
+    margin: 0;
+    flex-basis: 285px;
+    min-height: 285px;
+    background: url("../images/photographer.jpg") no-repeat;
+    background-size: cover;
+}
+@media (max-width: 1200px) {
+    .portfolio .img {
+        flex-basis: 250px;
+        min-height: 250px;
+    }
+}
+@media (max-width: 1050px) {
+    .portfolio .img {
+        flex-basis: 225px;
+        min-height: 225px;
+    }
+    .service .container {
+        flex-basis: 300px;
+        text-align: center;
+    }
+}
+@media (max-width: 950px) {
+    .portfolio .img {
+        flex-basis: 190px;
+        min-height: 190px;
+    }
+}
+@media (max-width: 800px) {
+    .portfolio .img {
+        flex-basis: 160px;
+        min-height: 160px;
+    }
+}
+@media (max-width: 690px) {
+    .portfolio .img {
+        flex-basis: 180px;
+        min-height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .portfolio .img {
+        flex-basis: 150px;
+        min-height: 150px;
+    }
+}@media (max-width: 500px) {
+    .portfolio .img {
+        flex-basis: 130px;
+        min-height: 130px;
+    }
+}
+@media (max-width: 440px) {
+    .portfolio .img {
+        flex-basis: 150px;
+        min-height: 150px;
+    }
+}
+@media (max-width: 350px) {
+    .portfolio .img {
+        flex-basis: 115px;
+        min-height: 115px;
+    }
+}@media (max-width: 290px) {
+    .portfolio .img {
+        flex-basis: 95px;
+        min-height: 95px;
+    }
+}
+@media (max-width: 235px) {
+    .portfolio .img {
+        flex-basis: 75px;
+        min-height: 75px;
+    }
+}
+@media (max-width: 185px) {
+    .portfolio .img {
+        flex-basis: 60px;
+        min-height: 60px;
+    }
+}
+.service {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.service .container {
+    flex-basis: 340px;
+    text-align: center;
+}
+.service .container img{
+    width: 120px;
+}
+@media (max-width: 1040px) {
+    .service .container {
+        flex-basis: 260px;
+        text-align: center;
+    }
+}
+@media (max-width: 800px) {
+    .service .container {
+        flex-basis: 200px;
+        text-align: center;
+    }
+}

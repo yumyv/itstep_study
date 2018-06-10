@@ -1,0 +1,7 @@
+.test {
+    border-left: 10px;
+    border-right: 10px;
+    border-bottom: transparent;
+    border: solid black;
+    display: inline-block;
+}

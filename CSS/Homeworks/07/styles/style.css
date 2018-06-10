@@ -1,0 +1,557 @@
+body {
+    margin: 0;
+    background: #ebebeb;
+    font-size: 12pt;
+    font-family: Helvetica LT Std, Helvetica, Arial, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 25px 0 30px;
+    max-width: 1050px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+/*header*/
+header {
+    padding-top: 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header #siteName {
+    font-size: 0;
+}
+
+header .siteName {
+    height: 60px;
+    color: white;
+    font-size: 36pt;
+    font-weight: bold;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+header .siteName.blue {
+    background: #00aedb;
+}
+
+header .siteName.green {
+    background: #b5da06;
+}
+
+header .siteName.blue.first {
+    height: 70px;
+    line-height: 75px;
+}
+
+header .siteName.green.first {
+    height: 70px;
+    line-height: 75px;
+}
+
+header .social {
+    bottom: 0;
+    right: 5px;
+    position: absolute;
+}
+
+header .social img {
+    width: 40px;
+}
+
+nav {
+    padding-top: 15px;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li.one {
+    background: #00aedb;
+}
+
+nav li.two {
+    background: #8cc63f;
+}
+
+nav li.three {
+    background: #5261ac;
+}
+
+nav li.four {
+    background: #00aedb;
+}
+
+nav li.five {
+    background: #f78f1d;
+}
+
+nav li.six {
+    background: #ff0000;
+}
+
+nav li.seven a {
+    width: 227px;
+    background: #898989;
+}
+
+nav a {
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16pt;
+    font-family: HelveticaLTStd-Cond, Helvetica, Arial, sans-serif;
+    display: inline-block;
+}
+
+/*content*/
+#content {
+    padding: 15px 0 100px 0;
+    width: 100%;
+    display: table;
+}
+
+/*main content*/
+section {
+    width: 65%;
+    padding-right: 20px;
+    display: table-cell;
+    position: relative;
+}
+
+section p {
+    text-align: justify;
+}
+
+section article {
+    position: relative;
+}
+
+section article .date {
+    top: 0;
+    left: -80px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-weight: bold;
+    position: absolute;
+}
+
+section article .date .number {
+    text-align: center;
+    width: 70px;
+    padding: 10px 0;
+    background: #f78f1d;
+}
+
+section article .date .month {
+    right: 0;
+    text-align: center;
+    font-size: 16pt;
+    width: 60px;
+    padding: 5px 0;
+    background: #00aedb;
+    position: absolute;
+}
+
+section article h1 {
+    margin: 0;
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+section .gallery {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bfbfbf;
+    background: #fafafa;
+}
+
+section .gallery .top {
+    width: 600px;
+    height: 350px;
+    background: url("../images/avatar1.jpg") no-repeat;
+    background-size: contain;
+}
+
+section .gallery .bottom {
+    height: 150px;
+    border: 1px solid #bfbfbf;
+}
+
+section .gallery .bottom.one {
+    background: url("../images/avatar1.jpg") -100px 0 no-repeat;
+    background-size: cover;
+}
+
+section .gallery .bottom.two {
+    background: url("../images/avatar2.jpg") -50px 0 no-repeat;
+    background-size: cover;
+}
+
+section .gallery .bottom.three {
+    background: url("../images/avatar3.jpg") -50px 0 no-repeat;
+    background-size: cover;
+}
+
+section .gallery .bottom.four {
+    background: url("../images/avatar4.png") -80px 0 no-repeat;
+    background-size: cover;
+}
+
+.headingElement {
+    left: -30px;
+    height: 30px;
+    padding: 5px 15px;
+    background: #5261ac;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.headingElement.one {
+    left: 0;
+}
+
+.headingElement.two {
+    left: 0;
+    width: 100%;
+}
+
+.headingElement.two::after {
+    display: none;
+}
+
+.headingElement p {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.headingElement::after {
+    content: "";
+    top: 0;
+    right: -30px;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to top right, #5261ac 50%, transparent 50%);
+    position: absolute;
+    display: inline-block;
+}
+
+section .text {
+    width: 100%;
+}
+
+section .text td {
+    width: 50%;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+section .text p {
+    position: relative;
+}
+
+section .text p::before {
+    content: "";
+    top: 0;
+    left: -20px;
+    border: 8px solid transparent;
+    border-left: 8px solid #5261ac;
+    position: absolute;
+    display: inline-block;
+}
+
+section form {
+    padding: 30px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+section label {
+    vertical-align: top;
+}
+
+section form p {
+    text-align: right;
+}
+
+section input {
+    margin-left: 15px;
+    height: 25px;
+    width: 80%;
+    outline: none;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+
+section textarea {
+    margin-left: 15px;
+    height: 100px;
+    width: 80%;
+    outline: none;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+
+section input[type=submit] {
+    margin: 0;
+    height: 35px;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f78f1d;
+    color: white;
+    cursor: pointer;
+    font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+}
+
+section .comment {
+    width: 100%;
+    padding: 40px 30px 50px;
+    box-sizing: border-box;
+}
+
+section .comment .commentContainer {
+    margin-bottom: 30px;
+}
+
+section .comment .pic {
+    width: 70px;
+    height: 70px;
+    background: url("../images/user.png") no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    display: inline-block;
+}
+
+section .comment .commentText {
+    width: 85%;
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+section .comment .commentText .heading {
+    position: relative;
+}
+
+section .comment .commentText .heading h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #5261ac;
+    display: inline-block;
+}
+
+section .comment .commentText .heading p {
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+}
+
+section .comment .commentText .commentBottom {
+    width: 80%;
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+}
+
+section .comment .commentText .commentBottom::after {
+    bottom: -10px;
+    right: -20%;
+    content: "Reply";
+    color: #5261ac;
+    font-size: 15pt;
+    font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    position: absolute;
+}
+
+/*aside content*/
+aside {
+    width: 35%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside .asideMenu {
+    width: 100%;
+}
+
+aside .asideMenu ul {
+    padding: 0;
+    margin-top: 5px;
+    font-size: 0;
+    list-style: none;
+}
+
+aside .asideMenu li {
+    display: inline-block;
+}
+
+aside .asideMenu li.one {
+    background: #ec098d;
+}
+
+aside .asideMenu li.two {
+    background: #f78f1d;
+    position: relative;
+    z-index: 1000;
+}
+
+aside .asideMenu li.two:after {
+    left: 34px;
+    bottom: -6px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #f78f1d;
+    transform: rotateZ(45deg);
+    z-index: 950;
+}
+
+aside .asideMenu li.three {
+    background: #00aedb;
+}
+
+aside .asideMenu li.three.one {
+    background: #00aedb;
+    width: 179px;
+}
+
+aside .asideMenu a {
+    font-family: HelveticaLTStd-Cond, Helvetica, Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14pt;
+    display: inline-block;
+}
+
+aside .asideContainerOne {
+    width: 100%;
+    margin-top: 15px;
+    display: table;
+    border-bottom: 1px solid #dedddd;
+}
+
+aside .asideContainerOne img {
+    padding: 5px;
+    width: 85px;
+    border: 1px solid #c9c9c9;
+    display: table-cell;
+}
+
+aside .asideContainerOne .asideTextOne {
+    padding: 0 10px;
+    vertical-align: top;
+    display: table-cell;
+}
+
+aside .asideContainerOne .asideTextOne h3 {
+    margin: 0;
+    font-weight: bold;
+    color: #00aedb;
+    font-size: 12pt;
+}
+
+aside .asideContainerOne .asideTextOne p {
+    text-align: justify;
+}
+
+aside .asideContainerTwo {
+    margin: 10px 0;
+    width: 100%;
+    display: table;
+}
+
+aside .asideContainerTwo img {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #c9c9c9;
+    display: table-cell;
+}
+
+aside .asideContainerTwo .asideTextTwo {
+    padding: 0 10px;
+    vertical-align: top;
+    display: table-cell;
+}
+
+aside .asideContainerTwo .asideTextTwo p {
+    margin-top: 0;
+}
+
+aside .asideContainerTwo .asideTextTwo a {
+    text-decoration: none;
+    color: #6bc6e5;
+    font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+aside .asideContainerTwo .asideTextTwo a:after {
+    top: 2px;
+    content: ">>";
+    color: #6bc6e5;
+    position: absolute;
+    margin-left: 5px;
+    font-size: 8pt;
+}
+
+aside .asideContainerThree {
+    width: 100%;
+}
+
+aside .asideContainerThree p {
+    text-align: justify;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    border-bottom: 1px solid #dedddd;
+    position: relative;
+}
+
+aside .asideContainerThree p:before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-left: 8px solid #5261ac;
+    left: -25px;
+}
+
+aside .asideContainerThree.one p {
+    border-bottom: none;
+}
+
+/*footer*/
+footer {
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 14pt;
+    color: #6a6666;
+    position: relative;
+}
+
+footer p {
+    position: relative;
+    left: 40%;
+    display: inline-block;
+}

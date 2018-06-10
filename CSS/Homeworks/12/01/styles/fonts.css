@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Phenomena';
+    src: url('../fonts/phenomena/Phenomena-Regular.woff2') format('woff2'),
+    url('../fonts/phenomena/Phenomena-Regular.woff') format('woff'),
+    url('../fonts/phenomena/Phenomena-Regular.ttf') format('truetype'),
+    url('../fonts/phenomena/Phenomena-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Phenomena';
+    src: url('../fonts/phenomena/Phenomena-Bold.woff2') format('woff2'),
+    url('../fonts/phenomena/Phenomena-Bold.woff') format('woff'),
+    url('../fonts/phenomena/Phenomena-Bold.ttf') format('truetype'),
+    url('../fonts/phenomena/Phenomena-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Phenomena';
+    src: url('../fonts/phenomena/Phenomena-ExtraBold.woff2') format('woff2'),
+    url('../fonts/phenomena/Phenomena-ExtraBold.woff') format('woff'),
+    url('../fonts/phenomena/Phenomena-ExtraBold.ttf') format('truetype'),
+    url('../fonts/phenomena/Phenomena-ExtraBold.svg#Phenomena-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}

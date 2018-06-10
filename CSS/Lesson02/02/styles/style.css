@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+}
+p.hello {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	font-size: 36pt;
+}
+.abst {
+	width: 800px;
+	height: 600px;
+	background-image:
+	    linear-gradient(to bottom right, #ccc 50%, transparent 50%),
+	    linear-gradient(to bottom left, #ccc 50%, transparent 50%),
+	    linear-gradient(to bottom right, rgba(255, 145, 0, 0.746) 50%, transparent 50%),
+		linear-gradient(to top right, #ccc 50%, transparent 50%),
+		linear-gradient(to top left, #ccc 50%, transparent 50%),
+		linear-gradient(to top left, rgba(255, 145, 0, 0.746) 50%, transparent 50%);
+	background-size: 400px 400px, 400px 400px, 400px 400px, 400px 200px, 400px 200px, 600px 200px;
+	background-repeat: no-repeat;
+	background-position: right bottom, left bottom, left bottom, left top, right top, right top;
+}

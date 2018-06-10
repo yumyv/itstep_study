@@ -1,0 +1,45 @@
+main {
+    margin: 0 auto;
+    width: 1200px;
+    height: 1200px;
+    background: azure;
+    perspective: 500px;
+}
+.test {
+    width: 200px;
+    height: 200px;
+    background: #6a1b9a;
+    position: relative;
+    transform: translate(200px, 200px);
+
+}
+.test::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background: #9c4dcc;
+    transform: translateY(-100px) skewX(-45deg);
+    transform-origin: bottom left;
+}
+.test::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 200px;
+    background: #38006b;
+    transform: translateX(200px) skewY(-45deg);
+    transform-origin: top  left;
+}
+.panda {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    background: red;
+}

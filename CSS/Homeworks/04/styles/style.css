@@ -1,0 +1,138 @@
+body {
+  background: #e0f2f1;
+  margin: 0%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+}
+/* corner elements */
+.corner {
+  width: 200px;
+  height: 200px;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+}
+.corner p {
+  position: relative;
+  margin: 0%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 200%;
+  font-weight: bold;
+}
+.corner.top_left {
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to bottom right, #4db6ac 50%, transparent 50%);
+}
+.corner.top_left:hover {
+  background: linear-gradient(to bottom right, #1b5e20 50%, transparent 50%);
+}
+.corner.top_left p {
+  top: 10%;
+  left: 10%;
+}
+.corner.top_right {
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(to bottom left, #4db6ac 50%, transparent 50%);
+}
+.corner.top_right:hover {
+  background: linear-gradient(to bottom left, #1b5e20 50%, transparent 50%);
+}
+.corner.top_right p {
+  top: 10%;
+  left: 60%;
+}
+.corner.bottom_right {
+  bottom: 0%;
+  right: 0%;
+  background: linear-gradient(to top left, #4db6ac 50%, transparent 50%);
+}
+.corner.bottom_right:hover {
+  background: linear-gradient(to top left, #1b5e20 50%, transparent 50%);
+}
+.corner.bottom_right p {
+  top: 70%;
+  left: 40%;
+}
+.corner.bottom_left {
+  bottom: 0%;
+  left: 0%;
+  background: linear-gradient(to top right, #4db6ac 50%, transparent 50%);
+}
+.corner.bottom_left:hover {
+  background: linear-gradient(to top right, #1b5e20 50%, transparent 50%);
+}
+.corner.bottom_left p {
+  top: 70%; 
+  left: 10%;
+}
+/* play table */
+#play_table {
+  width: 1200px;
+  height: 800px;
+  background: white;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -600px;
+  border-radius: 5%;
+  position: relative;
+  z-index: 900;
+}
+.card {
+  position: absolute;
+}
+.card img {
+  width: 150px;
+}
+.card.one {
+  top: 5%;
+  left: 5%;
+  z-index: 945;
+}
+.card.two {
+  top: 10%;
+  left: 10%;
+  z-index: 944;
+}
+.card.three {
+  top: 15%;
+  left: 15%;
+  z-index: 943;
+}
+.card.four {
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  z-index: 950;
+}
+.card.five {
+  top: 50%;
+  left:50%;
+  margin-top: -125px;
+  margin-left: -5px;
+  z-index: 949;
+}
+.card.six {
+  top: 50%;
+  left:50%;
+  margin-top: -175px;
+  margin-left: 50px;
+  z-index: 948;
+}
+.card.seven {
+  top: 50%;
+  left:50%;
+  margin-top: -125px;
+  margin-left: -175px;
+  z-index: 947;
+}
+.card.eight {
+  top: 50%;
+  left:50%;
+  margin-top: -175px;
+  margin-left: -225px;
+  z-index: 946;
+}

@@ -1,0 +1,72 @@
+body {
+	background: #bdbdbd;
+	text-align: center;
+}
+.main {
+	width: 1200px;
+	text-align: center;
+	font-family: arial;
+	background: white;
+	display: inline-block;
+}
+.main .header {
+	width: 1200px;
+	background: #00796b;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.main .title {
+	margin: 20px;
+}
+.main .header .logo {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+h1 {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	text-transform: uppercase;
+}
+.main .header .menu {
+	width: 1200px;
+	height: 50px;
+	background: #004c40;
+	text-align: center;
+	word-spacing: 40px;
+	display: inline-block;
+}
+.main .header a {
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+}
+.main .content {
+	display: inline-block;
+	width: 1200px;
+}
+.main .content .cards {
+	display: inline-block;
+	width: 300px;
+	padding: 50px;
+}
+.main .content .cards .img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-image: url("../images/topic1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.main .content .cards .text{
+	display: inline-block;
+	width: 300px;
+}

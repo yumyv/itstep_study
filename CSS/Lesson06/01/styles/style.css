@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container .left_bar {
+    max-width: 30%;
+    display: inline-block;
+}
+.container .left_bar .button {
+    width: 80px;
+    height: 30px;
+    background: aqua;
+    padding: 10px;
+    margin: 10px;
+    line-height: 30px;
+}
+.forms {
+    max-width: 65%;
+    display: inline-block;
+}
+.forms .form {
+    display: inline-block;
+}
+.forms .form.one {
+    margin: 3px;
+    display: block;
+}
+@media (max-width: 650px) {
+    .container .left_bar {
+        width: 100%;
+        display: block;
+    }
+    .container .left_bar .button {
+        display: inline-block;
+    }
+    .forms {
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width: 450px) {
+    .container .left_bar .button {
+        width: 63px;
+        padding: 3px;
+        margin: 3px;
+    }
+    .forms .form {
+        display: block;
+    }
+}

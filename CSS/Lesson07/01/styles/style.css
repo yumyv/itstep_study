@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 1em;
+    background: #e0f2f1;
+}
+
+header {
+    margin: 0 auto;
+    background: #00897b;
+    max-width: 1200px;
+    position: relative;
+}
+
+header input[type=checkbox] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: none;
+    opacity: 0;
+}
+
+header .burger {
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    background: url("../images/burger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 200%;
+    padding: 20px 30px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1000px;
+    background: #4db6ac;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 120%;
+}
+
+nav li:hover {
+    background: #26a69a;
+}
+
+nav ul .submenu {
+    top: 100%;
+    left: 0;
+    background: #4db6ac;
+    display: none;
+    position: absolute;
+}
+
+nav ul .submenu li {
+    display: block;
+    min-width: 150px;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+nav .submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article {
+    margin: 0 auto;
+    width: 95%;
+    background: #009688;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+article p {
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        display: none;
+    }
+
+    header input:checked + nav {
+        display: block;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header .burger {
+        display: block;
+    }
+
+    header input[type=checkbox] {
+        display: block;
+    }
+}

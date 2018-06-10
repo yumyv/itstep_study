@@ -1,0 +1,23 @@
+body {
+    background-color: cadetblue;
+}
+h1 {
+    color: white;
+    font-family: Arial;
+    font-size: 36px;
+    text-shadow: 3px 3px 3px #cc0c9c;
+}
+p {
+    background-color: white;
+    color: red;
+    font-size: 14pt;
+}
+ul {
+    background-color: white;
+}
+ol {
+    background-color: white;
+}
+a {
+    color: #00ff00;
+}

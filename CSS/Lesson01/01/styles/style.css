@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+}
+#header {
+	height: 100px;
+	line-height: 100px;
+	background-color: #879dbf;
+}
+#header .heading {
+	text-align: center;
+	font-family: arial;
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+#table table {
+	width: 100%;
+}
+.topic table {
+	padding: 20px;
+}
+.menu {
+	padding: 20px;
+}

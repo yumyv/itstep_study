@@ -386,18 +386,15 @@ header .logo {
 }
 
 @media screen and (max-width: 700px) {
-
     #studio .studioContainer .studioGallery .rectanglePic {
         transform: rotateZ(45deg) scale(0.6);
     }
 }
-
-@media screen and (max-width: 400px) {
-    #studio .studioContainer .studioGallery .rectanglePic {
-        transform: rotateZ(45deg) scale(0.5);
+@media screen and (max-width: 500px) {
+    #studio .rightBar {
+        top: 60%;
     }
 }
-
 @media screen and (max-width: 290px) {
     #studio {
         min-width: 290px;
@@ -668,8 +665,14 @@ header .logo {
     background-size: 100%;
 }
 @media screen and (max-width: 1150px) {
+    #masters {
+        padding: 60px 0 0;
+    }
     .oldSchoolContainer:hover > .oldSchool {
         display: none;
+    }
+    .oldSchoolContainer {
+        margin: 120px 0;
     }
     #masters .masterContainer {
         flex-flow: column;
@@ -680,8 +683,14 @@ header .logo {
     #masters {
         min-width: 290px;
     }
+    #masters .masterContainer {
+        padding: 60px 0;
+    }
     #masters .rectanglePic {
     transform: rotateZ(45deg) scale(0.7);
+    }
+    .oldSchoolContainer {
+        margin: 0;
     }
 }
 /*******portfolio******/
@@ -772,10 +781,8 @@ header .logo {
 }
 @media screen and (max-width: 860px) {
     #portfolio .portfolioContainer {
+        justify-content: center;
         padding: 120px 0 60px;
-    }
-    #portfolio .portfolioContainer .portfolioRow .rectanglePic {
-        transform: rotateZ(45deg) scale(1);
     }
     #portfolio .portfolioContainer .portfolioRow.one {
         top: 0;
@@ -784,15 +791,21 @@ header .logo {
         top: 0;
     }
     #portfolio .portfolioContainer .portfolioRow {
+        width: 20%;
         flex-flow: column;
         align-items: center;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 670px) {
     #portfolio {
         min-width: 290px;
     }
+    #portfolio .portfolioContainer .portfolioRow {
+        width: 100%;
+        justify-content: center;
+    }
     #portfolio .portfolioContainer .portfolioRow .rectanglePic {
-        transform: rotateZ(45deg) scale(0.7);
+        margin: 20px 0;
+        transform: rotateZ(45deg) scale(0.8);
     }
 }

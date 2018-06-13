@@ -227,6 +227,7 @@ header .logo {
     border-bottom: 70px solid transparent;
     border-left: 70px solid transparent;
     position: absolute;
+    z-index: 1100;
 }
 
 #studio #bar {
@@ -236,6 +237,21 @@ header .logo {
     width: 140px;
     position: absolute;
     filter: opacity(0);
+    z-index: 1200;
+}
+
+#studio #bar:checked {
+    left: calc(100% - 590px);
+    position: fixed;
+}
+
+#studio #bar:checked + .rightBar {
+    left: calc(100% - 590px);
+    position: fixed;
+}
+
+#studio #bar:checked + .rightBar + .bar {
+    display: flex;
 }
 
 #studio .bar {
@@ -245,11 +261,61 @@ header .logo {
     height: 100vh;
     padding: 150px 0;
     background: #161525;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: center;
     position: fixed;
+    overflow: scroll;
     z-index: 1000;
+    box-sizing: border-box;
+}
+
+#studio .bar img {
+    height: 20px;
+}
+
+#studio .bar .oldSchoolContainer {
+    display: inline-block;
+}
+
+#studio .bar .form {
+    padding: 300px 50px 100px;
+}
+
+#studio .bar .form form input[placeholder] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #225e68;
+    color: white;
+    box-sizing: border-box;
+}
+
+#studio .bar .form form input::placeholder {
+    color: white;
+}
+
+#studio .bar .socialLinks {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#studio .bar .socialLinks .text {
+    color: #cccccc;
+    text-transform: uppercase;
+}
+
+#studio .bar .socialLinks .space {
+    padding: 0 10px;
+    font-size: 20px;
+    color: #373640;
 }
 
 #studio .studioContainer {
@@ -396,6 +462,10 @@ header .logo {
         top: 50%;
     }
 
+    #studio #bar {
+        top: 50%;
+    }
+
     #studio .studioContainer .studioGallery {
         width: 100%;
         margin-top: 50px;
@@ -414,15 +484,53 @@ header .logo {
     #studio .studioContainer .studioGallery .rectanglePic {
         transform: rotateZ(45deg) scale(0.6);
     }
+
+    #studio .bar {
+        width: 100%;
+    }
+
+    #studio #bar:checked {
+        left: -30px;
+        position: fixed;
+    }
+
+    #studio #bar:checked + .rightBar {
+        left: -30px;
+        border-right: 70px solid transparent;
+        border-left: 70px solid #33cccc;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    #studio .bar .oldSchoolContainer {
+        transform: scale(0.8);
+    }
+
     #studio .rightBar {
         top: 60%;
+    }
+
+    #studio #bar {
+        top: 60%;
+    }
+
+    #studio .bar .socialLinks {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    #studio .bar .socialLinks .text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 290px) {
+    .bar {
+        min-width: 290px;
+    }
+
     #studio {
         min-width: 290px;
     }

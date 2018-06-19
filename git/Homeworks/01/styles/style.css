@@ -63,6 +63,10 @@ main article {
 main article .textContainer {
     text-align: justify;
 }
+main article .textContainer img {
+    width: 200px;
+    float: left;
+}
 
 footer {
     margin: 0 auto;

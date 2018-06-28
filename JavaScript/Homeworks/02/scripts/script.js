@@ -1,5 +1,5 @@
 //task 0
-
+/*
 var answerCount = 0;
 
 var userAnswer = parseInt(prompt("Enter the number where '1' is '5', '2' is '8', '3' is '-2'. 2+3=?"));
@@ -42,21 +42,114 @@ var userAnswer = parseInt(prompt("Enter the number where '1' is '79', '2' is '44
 if (userAnswer == 2) {
     answerCount++
 }
-answerCount*= 1.2;
+answerCount *= 1.2;
 alert("Your mark is " + parseInt(answerCount));
-
+*/
 //task 1
-
-var volumeTank = parseInt(prompt("Enter the volume of the tank in liters"));
-var amountFuel = parseInt(prompt("Enter the amount of fuel in the tank in liters"));
-var weightGoods = parseInt(prompt("Enter the weight of the goods in tons"));
-var acDistance = parseInt(prompt("Enter the distance from A to C in kilometer"));
-var cbDistance = parseInt(prompt("Enter the distance from C to B in kilometer"));
+/*
+var volumeTank = parseFloat(prompt("Enter the volume of the tank in liters"));
+var amountFuel = parseFloat(prompt("Enter the amount of fuel in the tank in liters"));
+var weightGoods = parseFloat(prompt("Enter the weight of the goods in tons"));
+var acDistance = parseFloat(prompt("Enter the distance from A to C in kilometers"));
+var cbDistance = parseFloat(prompt("Enter the distance from C to B in kilometers"));
 
 var totalDistance = acDistance + cbDistance;
 
-
-
-if (weightGoods < 1) {
-
+if (volumeTank < amountFuel) {
+    alert("Invalid input");
+} else {
+    if (weightGoods < 1) {
+        var FUELCONSUMPTION = 0.25;
+        var needTotalFuel = FUELCONSUMPTION * totalDistance;
+        if (amountFuel < needTotalFuel) {
+            var needFuelAcDistance = FUELCONSUMPTION * acDistance;
+            if (amountFuel < needFuelAcDistance) {
+                alert("Too little fuel");
+            } else {
+                var needFuelCbDistance = FUELCONSUMPTION * cbDistance;
+                if (needFuelCbDistance <= volumeTank) {
+                    alert("You need in the point C to fuel the " + (needFuelCbDistance - (amountFuel - needFuelAcDistance)).toFixed(2) + " liters");
+                } else {
+                    alert("Fuel tank too small");
+                }
+            }
+        } else {
+            alert("You will reach the point B without stops at point C");
+        }
+    } else if (weightGoods < 2) {
+        var FUELCONSUMPTION = 0.3;
+        var needTotalFuel = FUELCONSUMPTION * totalDistance;
+        if (amountFuel < needTotalFuel) {
+            var needFuelAcDistance = FUELCONSUMPTION * acDistance;
+            if (amountFuel < needFuelAcDistance) {
+                alert("Too little fuel");
+            } else {
+                var needFuelCbDistance = FUELCONSUMPTION * cbDistance;
+                if (needFuelCbDistance <= volumeTank) {
+                    alert("You need in the point C to fuel the " + (needFuelCbDistance - (amountFuel - needFuelAcDistance)).toFixed(2) + " liters");
+                } else {
+                    alert("Fuel tank too small");
+                }
+            }
+        } else {
+            alert("You will reach the point B without stops at point C");
+        }
+    } else if (weightGoods < 3) {
+        var FUELCONSUMPTION = 0.35;
+        var needTotalFuel = FUELCONSUMPTION * totalDistance;
+        if (amountFuel < needTotalFuel) {
+            var needFuelAcDistance = FUELCONSUMPTION * acDistance;
+            if (amountFuel < needFuelAcDistance) {
+                alert("Too little fuel");
+            } else {
+                var needFuelCbDistance = FUELCONSUMPTION * cbDistance;
+                if (needFuelCbDistance <= volumeTank) {
+                    alert("You need in the point C to fuel the " + (needFuelCbDistance - (amountFuel - needFuelAcDistance)).toFixed(2) + " liters");
+                } else {
+                    alert("Fuel tank too small");
+                }
+            }
+        } else {
+            alert("You will reach the point B without stops at point C");
+        }
+    } else if (weightGoods < 4) {
+        var FUELCONSUMPTION = 0.42;
+        var needTotalFuel = FUELCONSUMPTION * totalDistance;
+        if (amountFuel < needTotalFuel) {
+            var needFuelAcDistance = FUELCONSUMPTION * acDistance;
+            if (amountFuel < needFuelAcDistance) {
+                alert("Too little fuel");
+            } else {
+                var needFuelCbDistance = FUELCONSUMPTION * cbDistance;
+                if (needFuelCbDistance <= volumeTank) {
+                    alert("You need in the point C to fuel the " + (needFuelCbDistance - (amountFuel - needFuelAcDistance)).toFixed(2) + " liters");
+                } else {
+                    alert("Fuel tank too small");
+                }
+            }
+        } else {
+            alert("You will reach the point B without stops at point C");
+        }
+    } else if (weightGoods < 5) {
+        var FUELCONSUMPTION = 0.5;
+        var needTotalFuel = FUELCONSUMPTION * totalDistance;
+        if (amountFuel < needTotalFuel) {
+            var needFuelAcDistance = FUELCONSUMPTION * acDistance;
+            if (amountFuel < needFuelAcDistance) {
+                alert("Too little fuel");
+            } else {
+                var needFuelCbDistance = FUELCONSUMPTION * cbDistance;
+                if (needFuelCbDistance <= volumeTank) {
+                    alert("You need in the point C to fuel the " + (needFuelCbDistance - (amountFuel - needFuelAcDistance)).toFixed(2) + " liters");
+                } else {
+                    alert("Fuel tank too small");
+                }
+            }
+        } else {
+            alert("You will reach the point B without stops at point C");
+        }
+    } else {
+        alert("Too heavy load");
+    }
 }
+*/

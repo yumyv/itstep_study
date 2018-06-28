@@ -47,5 +47,16 @@ alert("Your mark is " + parseInt(answerCount));
 
 //task 1
 
+var volumeTank = parseInt(prompt("Enter the volume of the tank in liters"));
+var amountFuel = parseInt(prompt("Enter the amount of fuel in the tank in liters"));
+var weightGoods = parseInt(prompt("Enter the weight of the goods in tons"));
+var acDistance = parseInt(prompt("Enter the distance from A to C in kilometer"));
+var cbDistance = parseInt(prompt("Enter the distance from C to B in kilometer"));
+
+var totalDistance = acDistance + cbDistance;
 
 
+
+if (weightGoods < 1) {
+
+}

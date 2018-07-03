@@ -1,5 +1,5 @@
 //task 0
-/*
+
 var answerCount = 0;
 
 var userAnswer = parseInt(prompt("Enter the number where '1' is '5', '2' is '8', '3' is '-2'. 2+3=?"));
@@ -44,9 +44,9 @@ if (userAnswer == 2) {
 }
 answerCount *= 1.2;
 alert("Your mark is " + parseInt(answerCount));
-*/
+
 //task 1
-/*
+
 var volumeTank = parseFloat(prompt("Enter the volume of the tank in liters"));
 var amountFuel = parseFloat(prompt("Enter the amount of fuel in the tank in liters"));
 var weightGoods = parseFloat(prompt("Enter the weight of the goods in tons"));
@@ -152,12 +152,5 @@ if (volumeTank < amountFuel) {
         alert("Too heavy load");
     }
 }
-*/
+
 //task 2
-
-var toaster = parseInt(prompt("Есть ли у Вас тостер: 1-Yes, 2-No"));
-var bread = parseInt(prompt("есть ли у вас хлеб: 1-Yes, 2-No"));
-
-if (toaster + bread == 2) {
-
-} else

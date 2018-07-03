@@ -153,3 +153,11 @@ if (volumeTank < amountFuel) {
     }
 }
 */
+//task 2
+
+var toaster = parseInt(prompt("Есть ли у Вас тостер: 1-Yes, 2-No"));
+var bread = parseInt(prompt("есть ли у вас хлеб: 1-Yes, 2-No"));
+
+if (toaster + bread == 2) {
+
+} else

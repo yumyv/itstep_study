@@ -74,8 +74,8 @@ else {
 var toaster = parseInt(prompt("есть ли у вас тостер? 1 - yes, 2 - no"));
 var bread = parseInt(prompt("есть ли у вас хлеб? 1 - yes, 2 - no"));
 
-if (toaster===1) {
-    if  (bread === 1) {
+if (toaster === 1) {
+    if (bread === 1) {
         alert("1 - нарезать хлеб, 2 - положить хлеб в тостер, 3 - включить тостер, 4 - подождать 5 минут, 5 - тосты готовы");
     } else {
         var breadMoney = parseInt(prompt("есть ли у вас деньги на хлеб? 1 - yes, 2 - no"));

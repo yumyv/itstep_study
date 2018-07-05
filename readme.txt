@@ -1,1 +1,1 @@
-Course "Front-End development" in the computer academy "STEP"
+"Front-End development" in the computer academy "STEP"

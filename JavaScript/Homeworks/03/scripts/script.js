@@ -45,11 +45,10 @@ for (var i = 1; i < 10; i++) {
 
 document.write("<h2>Task 4</h2>");
 var userWord = prompt("Enter the word: ");
-userWord.toString();
 var userString = parseInt(prompt("Enter the number of strings: "));
 
 for (var i = 0; i <= userString; i++) {
-    document.write((userWord++) + "<br>");
+    document.write((userWord+=userWord) + "<br>");
 }
 
 

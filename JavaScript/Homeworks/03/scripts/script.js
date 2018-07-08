@@ -58,12 +58,6 @@ var userNumber = parseInt(prompt("Enter the number"));
 
 */
 
-var arr = ["Яблоко", "Апельсин", "Груша"];
-
-for (var i = 0; i < arr.length; i++) {
-    alert(arr[i]);
-}
-
 
 
 

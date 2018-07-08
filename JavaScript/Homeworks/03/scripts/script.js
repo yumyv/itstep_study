@@ -47,8 +47,9 @@ document.write("<h2>Task 4</h2>");
 var userWord = prompt("Enter the word: ");
 var userString = parseInt(prompt("Enter the number of strings: "));
 
+var userWordEmpty = "";
 for (var i = 0; i <= userString; i++) {
-    document.write((userWord+=userWord) + "<br>");
+    document.write((userWordEmpty += userWord + "&nbsp;&nbsp;&nbsp;&nbsp;") + "<br>");
 }
 
 

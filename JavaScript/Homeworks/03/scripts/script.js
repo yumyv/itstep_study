@@ -1,5 +1,5 @@
 //Task 0
-
+/*
 document.write("<h2>Task 0</h2>");
 var i = 1;
 while (i <= 100) {
@@ -52,7 +52,17 @@ for (var i = 0; i <= userString; i++) {
     document.write((userWordEmpty += userWord + "&nbsp;&nbsp;&nbsp;&nbsp;") + "<br>");
 }
 
+//task 5
 
+var userNumber = parseInt(prompt("Enter the number"));
+
+*/
+
+var arr = ["Яблоко", "Апельсин", "Груша"];
+
+for (var i = 0; i < arr.length; i++) {
+    alert(arr[i]);
+}
 
 
 

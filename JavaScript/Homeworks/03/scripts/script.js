@@ -1,5 +1,5 @@
 //Task 0
-/*
+
 document.write("<h2>Task 0</h2>");
 var i = 1;
 while (i <= 100) {
@@ -56,7 +56,6 @@ for (var i = 0; i <= userString; i++) {
 
 var userNumber = parseInt(prompt("Enter the number"));
 
-*/
 
 //task 5*
 

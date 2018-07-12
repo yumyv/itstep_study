@@ -24,15 +24,19 @@ showArray(arr);
 */
 //task 2
 
-var arr = [2, 7, 4, 2, -3, 1];
+var arr = [2, 7, 4, 2, -3, 1,4];
 
-var buf = arr[0];
+//showArray(arr);
+
+var buf = 0;
 var x = arr.length;
-for (var i = 0; i < arr.length; i++) {
+
+for (var i = 0; i < (arr.length/2); i++) {
     buf=arr[i];
     --x;
     arr[i] = arr[x];
     arr[x] = buf;
+
 }
 
 showArray(arr);

@@ -58,6 +58,16 @@ var userNumber = parseInt(prompt("Enter the number"));
 
 */
 
+//task 5*
+
+var userNumber = parseInt(prompt("Enter the number"));
+var sum = 0;
+
+while (userNumber > 0) {
+    sum += (userNumber%10);
+    userNumber = parseInt(userNumber/10);
+}
+document.write("Sum of numbers " + sum);
 
 
 

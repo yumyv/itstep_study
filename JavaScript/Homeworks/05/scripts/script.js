@@ -26,7 +26,6 @@ showArray(arr);
 
 var arr = [2, 7, 4, 2, -3, 1,4];
 
-//showArray(arr);
 
 var buf = 0;
 var x = arr.length;

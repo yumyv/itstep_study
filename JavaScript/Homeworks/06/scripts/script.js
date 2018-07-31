@@ -16,7 +16,11 @@ function lowerValueArray(arr) {
     }
     return result;
 }
-
-let arr = [-2,2,3,4,1,5,6];
-
-console.log(lowerValueArray(arr));
+//4
+function lowerIndexArr(arr,from,to) {
+    let result = arr[from];
+    for (let i = from; i < to; i++) {
+        if (lowerValue(arr[i],arr[i+1]) < result) result = lowerValue(arr[i],arr[i+1]);
+    }
+    return arr.indexOf(result);
+}

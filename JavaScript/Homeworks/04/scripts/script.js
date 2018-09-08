@@ -1,7 +1,7 @@
 //task 01
 
 var height = parseInt(prompt("Enter the height"));
-var n = "&nbsp"
+var n = "&nbsp";
 for (let i = 0; i < height; i++) {
     for (let k = height; k > i - 1; k--) {
         document.write(n, n)

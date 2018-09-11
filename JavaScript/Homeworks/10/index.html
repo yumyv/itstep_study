@@ -10,6 +10,46 @@
     <title>Home</title>
 </head>
 <body>
-
+    <main>
+        <div class="info"></div>
+        <form action="#" method="post">
+            <label for="info"></label>
+            <p><textarea rows="10" cols="45" name="text" id="info"></textarea></p>
+        </form>
+        <form action="#" method="post">
+            <p>Добавить книгу</p>
+            <label for="bookName">Название</label>
+            <input type="text" id="bookName">
+            <label for="author">Автор</label>
+            <input type="text" id="author">
+            <label for="year">Год</label>
+            <input type="text" id="year">
+            <button id="addBook">ok</button>
+        </form>
+        <form action="#" method="post">
+            <p>Вывести информацию</p>
+            <label for="bookByIndex">Введите номер</label>
+            <input type="text" id="bookByIndex">
+            <button id="bookIndex">ok</button>
+        </form>
+        <form action="#" method="post">
+            <p>Удалить книгу</p>
+            <label for="removeByIndex">Введите номер</label>
+            <input type="text" id="removeByIndex">
+            <button>ok</button>
+        </form>
+        <form action="#" method="post">
+            <p>Удалить книгу</p>
+            <label for="removeByName">Введите номер</label>
+            <input type="text" id="removeByName">
+            <button>ok</button>
+        </form>
+        <form action="#" method="post">
+            <p>Поиск по автору</p>
+            <label for="showByAuthor">Введите номер</label>
+            <input type="text" id="showByAuthor">
+            <button>ok</button>
+        </form>
+    </main>
 </body>
 </html>

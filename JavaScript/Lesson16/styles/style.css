@@ -1,0 +1,46 @@
+main .contextMenu {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: #00acc1;
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+
+main .contextMenu .context {
+    width: 200px;
+    height: 200px;
+    background: #00acc1;
+    position: absolute;
+    right: -220px;
+    top: 0;
+    display: none;
+}
+
+main .contextMenu .context.active {
+    display: block;
+}
+
+main .contextMenu .hover {
+    box-sizing: border-box;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main .contextMenu .hover:hover {
+    background: #4db6ac;
+}
+
+main .contextMenu.active {
+    display: block;
+}
+
+main .colorTable {
+    margin: 0 auto;
+}
+
+main .colorTable td {
+    padding: 40px;
+    background: gray;
+}

@@ -1,0 +1,14 @@
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    margin: 3px;
+    display: block;
+}

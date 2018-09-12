@@ -12,11 +12,9 @@
 <body>
     <main>
         <div class="info"></div>
-        <form action="#" method="post">
             <label for="info"></label>
             <p><textarea rows="10" cols="45" name="text" id="info"></textarea></p>
-        </form>
-        <form action="#" method="post">
+
             <p>Добавить книгу</p>
             <label for="bookName">Название</label>
             <input type="text" id="bookName">
@@ -25,31 +23,27 @@
             <label for="year">Год</label>
             <input type="text" id="year">
             <button id="addBook">ok</button>
-        </form>
-        <form action="#" method="post">
+
             <p>Вывести информацию</p>
             <label for="bookByIndex">Введите номер</label>
-            <input type="text" id="bookByIndex">
+            <input type="number" id="bookByIndex">
             <button id="bookIndex">ok</button>
-        </form>
-        <form action="#" method="post">
+
             <p>Удалить книгу</p>
             <label for="removeByIndex">Введите номер</label>
             <input type="text" id="removeByIndex">
-            <button>ok</button>
-        </form>
-        <form action="#" method="post">
+            <button id="removeIndex">ok</button>
+
             <p>Удалить книгу</p>
-            <label for="removeByName">Введите номер</label>
+            <label for="removeByName">Введите название</label>
             <input type="text" id="removeByName">
-            <button>ok</button>
-        </form>
-        <form action="#" method="post">
+            <button id="removeName">ok</button>
+
             <p>Поиск по автору</p>
-            <label for="showByAuthor">Введите номер</label>
+            <label for="showByAuthor">Автор</label>
             <input type="text" id="showByAuthor">
-            <button>ok</button>
-        </form>
+            <button id="showAuthor">ok</button>
+
     </main>
 </body>
 </html>

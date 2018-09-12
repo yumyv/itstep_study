@@ -70,28 +70,64 @@ window.addEventListener("load", function () {
         }
     }
 
+    let lib = new Library();
 
     let info = document.querySelector("#info");
 
-    let bookName = document.querySelector("#bookName");
-    let author = document.querySelector("#author");
-    let year = document.querySelector("#year");
     let btnAddBook = document.querySelector("#addBook");
 
     btnAddBook.addEventListener("click", function () {
+        let bookName = document.querySelector("#bookName").value;
+        let author = document.querySelector("#author").value;
+        let year = document.querySelector("#year").value;
         let book = new Book(bookName, author, year);
-        let lib = new Library().add(book);
+        lib.add(book);
+        let result = lib.showBooks();
+        info.innerHTML = result;
     });
 
-    let bookIndex = document.querySelector("#bookByIndex");
     let btnBookIndex = document.querySelector("#bookIndex");
 
-    //////////////////////
+
+    ///////////
     btnBookIndex.addEventListener("click", function () {
-        let text = bookIndex.value;
-        info.innerHTML = text;
+        let bookIndex = document.querySelector("#bookByIndex").value;
+        let result = lib.showBookByIndex(bookIndex);
+        info.innerHTML = result;
     });
-    ////////////////////////
+    ///////////
+
+
+    let btnRemoveByIndex = document.querySelector("#removeIndex");
+
+
+    ///////////
+    btnRemoveByIndex.addEventListener("click", function () {
+        let bookIndex = document.querySelector("#removeByIndex").value;
+        let result = lib.removeBookByIndex(bookIndex);
+        info.innerHTML = result;
+    });
+    //////////
+
+    //////////
+    let btnRemoveByName = document.querySelector("#removeName");
+
+    btnRemoveByName.addEventListener("click", function () {
+        let bookName = document.querySelector("#removeByName").value;
+        let result = lib.removeBookByName(bookName);
+        info.innerHTML = result;
+    });
+    //////////////
+
+    /////////////
+    let btnShowByAuthor = document.querySelector("#showAuthor");
+
+    btnShowByAuthor.addEventListener("click", function () {
+        let bookAuthor = document.querySelector("#showByAuthor").value;
+        let result = lib.showBooksByAuthor(bookAuthor);
+        info.innerHTML = result;
+    });
+    /////////////
 });
 
 

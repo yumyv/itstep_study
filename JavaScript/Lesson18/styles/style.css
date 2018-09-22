@@ -1,0 +1,35 @@
+body {
+    background: gray;
+}
+main {
+    margin: 0 auto;
+    background: white;
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.bubble {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.counter {
+    width: 100px;
+    height: 100px;
+    background: #003d33;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}

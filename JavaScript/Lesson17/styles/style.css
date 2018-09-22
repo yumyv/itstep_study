@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+main {
+    background: #4db6ac;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.element {
+    width: 400px;
+    height: 400px;
+    background: #5e92f3;
+}

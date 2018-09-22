@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
         this.showBooks = function () {
             let result = "";
             for (let i = 0; i < this.books.length; i++) {
-                result += i + ": " + this.books[i].bookName + "\n" + "'" + this.books[i].author + "' " + this.books[i].year + " год" + "\n";
+                result += i + ": " + "\"" + this.books[i].bookName + "\"" + "\n" + this.books[i].author + " " + this.books[i].year + " год" + "\n";
             }
             return result;
         };
@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
             let result = "";
             let n = parseInt(index, 10);
             for (let i = 0; i < this.books.length; i++) {
-                if (i === n) result = i + ": " + this.books[i].bookName + "\n";
+                if (i === n) result = i + ": " + "\"" + this.books[i].bookName + "\"" + "\n" + this.books[i].author + " " + this.books[i].year + " год" + "\n";
             }
             return result;
         };
@@ -46,15 +46,13 @@ window.addEventListener("load", function () {
             let result = "";
             for (let i = 0; i < this.books.length; i++) {
                 if (this.books[i].author.toLowerCase() === author.toLowerCase()) {
-                    for (let j = 0; j < this.books.length; j++) {
-                        if (this.books[i].bookName.toLowerCase() === this.books[j].bookName.toLowerCase()) result += i + ": " + this.books[i].bookName + "\n";
-                    }
+                    result += i + ": " + "\"" + this.books[i].bookName + "\"" + "\n" + this.books[i].year + " год" + "\n";
+
                 }
             }
-            return result;
+            return "Книги автора: " + author + "\n" + result;
         }
     }
-
 
     function Book(bookName, author, year) {
         this.bookName = bookName;
@@ -73,9 +71,7 @@ window.addEventListener("load", function () {
     }
 
     let lib = new Library();
-
     let info = document.querySelector("#info");
-
     let btnAddBook = document.querySelector("#addBook");
 
     btnAddBook.addEventListener("click", function () {
@@ -88,8 +84,8 @@ window.addEventListener("load", function () {
         info.innerHTML = result;
     });
 
-    let btnBookIndex = document.querySelector("#bookIndex");
 
+    let btnBookIndex = document.querySelector("#bookIndex");
 
     btnBookIndex.addEventListener("click", function () {
         let bookIndex = document.querySelector("#bookByIndex").value;
@@ -100,7 +96,6 @@ window.addEventListener("load", function () {
 
     let btnRemoveByIndex = document.querySelector("#removeIndex");
 
-
     btnRemoveByIndex.addEventListener("click", function () {
         if (lib.showBooks()) {
             let bookIndex = document.querySelector("#removeByIndex").value;
@@ -108,7 +103,6 @@ window.addEventListener("load", function () {
             info.innerHTML = result;
         }
     });
-
 
 
     let btnRemoveByName = document.querySelector("#removeName");
@@ -120,7 +114,6 @@ window.addEventListener("load", function () {
     });
 
 
-    /////////
     let btnShowByAuthor = document.querySelector("#showAuthor");
 
     btnShowByAuthor.addEventListener("click", function () {

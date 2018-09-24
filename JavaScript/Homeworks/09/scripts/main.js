@@ -9,7 +9,7 @@ function str_replace(str, from, to) {
 let s = str_replace("hello world, hello people", "hello", "good by");
 console.log(s);
 
-//not ready
+//only first "from"
 function str_replace_indexOf(str, from, to) {
     for (let i = 0; i < str.length; i++) {
         let st1 = str.slice(i, str.indexOf(from));

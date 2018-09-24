@@ -3,24 +3,23 @@ function str_replace(str, from, to) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === from) arr[i] = to;
     }
-    let newStr = arr.join(" ");
-    return newStr;
+    return arr.join(" ");
 }
 
 let s = str_replace("hello world, hello people", "hello", "good by");
 console.log(s);
 
-
+//not ready
 function str_replace_indexOf(str, from, to) {
-    let wasWord = str.slice((str.indexOf(from)), from.length);
-    let nowWord = str.slice((str.indexOf(to)), to.length);
-
-    let buf = str.slice(str.indexOf(from), from.length);
-    return str
-
+    for (let i = 0; i < str.length; i++) {
+        let st1 = str.slice(i, str.indexOf(from));
+        let fromLength = from.length + str.indexOf(from);
+        let st2 = str.slice(fromLength);
+        var st3 = st1 + to + st2;
+    }
+    return st3;
 }
 
-let sIndexOf = str_replace_indexOf("hello world, hello people", "hello", "good by")
-
-//console.log(sIndexOf);
+let sIndexOf = str_replace_indexOf("hello world, hello people", "hello", "good by");
+console.log(sIndexOf);
 

@@ -12,9 +12,26 @@ window.addEventListener("load", function () {
         list.appendChild(listElem);
     });
 
-    list.addEventListener("click", function () {
-        if (list.target) alert("hello");
-    })
+    list.addEventListener("click", function (e) {
+        if (!e.target.matches(".list")) {
+            if (e.target.matches(".active"))
+                e.target.classList.remove("active");
+            else e.target.classList.add("active");
+        }
+    });
 
+    del.addEventListener("click", function () {
+        while (list.firstChild)
+            list.removeChild(document.querySelector(".active"));
+    });
+
+    //////for delete use "D" key
+    document.addEventListener("keypress", function (e) {
+        let keyCode = e.keyCode;
+        if (keyCode === 100) {
+            while (list.firstChild)
+                list.removeChild(document.querySelector(".active"));
+        }
+    })
 
 });

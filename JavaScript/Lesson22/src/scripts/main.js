@@ -1,0 +1,9 @@
+class Vasia {
+    constructor(name) {
+        this.name = name;
+    }
+
+    getName() {
+        return this.name;
+    }
+}

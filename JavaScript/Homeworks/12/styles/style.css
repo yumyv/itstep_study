@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: #5e92f3;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+article {
+    padding: 20px;
+    width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.list {
+    width: 700px;
+}
+
+.list .listElem {
+    padding: 10px;
+    background: #007c91;
+    color: white;
+    border-radius: 10px;
+}
+
+.list .active {
+    background: #004c40;
+}
+
+.tools {
+    width: 400px;
+}
+
+.tools input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tools button {
+    margin: 20px 20px 0 0;
+}
+

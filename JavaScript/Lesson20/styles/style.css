@@ -1,0 +1,13 @@
+body {
+    background: #4db6ac;
+}
+.container {
+    padding: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: white;
+}
+.container input {
+    width: 100%;
+}

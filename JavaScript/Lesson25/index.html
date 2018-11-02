@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="baseApi.js"></script>
+    <script src="SliderModule.js"></script>
+    <script>
+        let page = new Page();
+        page.registerModule(new SliderModule(".myslider1",5000));
+        page.start();
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="slider myslider1">
+    <div class="slider-arrow slider-arrow-left"></div>
+    <div class="slider-arrow slider-arrow-right"></div>
+    <div class="switcher">
+        <div class="bubble"></div>
+        <div class="bubble current"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="slider-wrapper">
+        <div class="slider-slide" style="background: blue">1</div>
+        <div class="slider-slide" style="background: green">2</div>
+        <div class="slider-slide" style="background: yellow">3</div>
+        <div class="slider-slide" style="background: gray">4</div>
+    </div>
+</div>
+</body>
+</html>

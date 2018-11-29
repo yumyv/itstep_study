@@ -26,7 +26,7 @@ class Page{
         this.modules.forEach(m=>m.init())
     }
     start(){
-        window.addEventListener("load",e=>this.init());
+        window.addEventListener("load",()=>this.init());
     }
 }
 //---------------------------TODO_APPLICATION----------------------

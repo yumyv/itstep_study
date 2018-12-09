@@ -17,7 +17,6 @@ public class Main {
             System.out.println("2 - delete user by number");
             System.out.println("3 - delete user by name");
             System.out.println("4 - show list");
-            System.out.println("5 - exit");
 
             int choice = Integer.parseInt(sc.nextLine());
 

@@ -57,7 +57,7 @@ public class Main {
         System.out.println("Enter the number of user: ");
         String inputValue = sc.nextLine();
         int result = Integer.parseInt(inputValue);
-        if (result < listOfNames.size()-1) {
+        if (result < listOfNames.size()) {
             listOfNames.remove(result);
         } else {
             System.out.println("Un correct number, user undefined");

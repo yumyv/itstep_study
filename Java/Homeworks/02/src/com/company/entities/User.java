@@ -7,7 +7,7 @@ import java.util.List;
 import static com.company.Main.sc;
 
 public class User {
-    private String name;
+
     private List<String> users = new LinkedList<>(Arrays.asList());
 
     public void showList() {
@@ -16,20 +16,18 @@ public class User {
         }
     }
 
-    public void deleteUserByName() {
+    public void deleteUserByName(String name) {
         System.out.println("Enter the name: ");
-        String inputValue = sc.nextLine();
         for (int i = 0; i < users.size(); i++) {
-            if (users.get(i).equalsIgnoreCase(inputValue)) {
+            if (users.get(i).equalsIgnoreCase(name)) {
                 users.remove(i);
             }
         }
     }
 
-    public void deleteUserByIndex() {
+    public void deleteUserByIndex(String id) {
         System.out.println("Enter the number of user: ");
-        String inputValue = sc.nextLine();
-        int result = Integer.parseInt(inputValue);
+        int result = Integer.parseInt(id);
         if (result < users.size()) {
             users.remove(result);
         } else {
@@ -37,9 +35,8 @@ public class User {
         }
     }
 
-    public void addUser() {
+    public void addUser(String name) {
         System.out.println("Enter the name: ");
-        String result = sc.nextLine();
-        users.add(result);
+        users.add(name);
     }
 }

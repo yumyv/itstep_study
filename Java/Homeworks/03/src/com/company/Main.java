@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.FileManager.Manager;
 import com.company.entities.User;
 
 import java.util.Scanner;

@@ -1,14 +1,16 @@
 package com.company.entities;
 
+import com.company.FileManager.Manager;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import static com.company.Main.sc;
-
 public class User {
 
-    private List<String> users = new LinkedList<>(Arrays.asList());
+    //private Manager manager = new Manager();
+    public List<String> users = new LinkedList<>(Arrays.asList());
+
 
     public void showList() {
         for (String i: users) {

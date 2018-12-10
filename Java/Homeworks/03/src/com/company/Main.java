@@ -25,10 +25,10 @@ public class Main {
                     user.addUser(sc.nextLine());
                     break;
                 case 2:
-                    user.deleteUserByIndex();
+                    user.deleteUserByIndex(sc.nextLine());
                     break;
                 case 3:
-                    user.deleteUserByName();
+                    user.deleteUserByName(sc.nextLine());
                     break;
                 case 4:
                     user.showList();

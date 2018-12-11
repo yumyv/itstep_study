@@ -47,12 +47,15 @@ window.addEventListener("load", function () {
 
         loadComponents() {
             this.selectorList = document.querySelector(".phones");
+
             this.addBtn = document.querySelector(".add");
             this.inputDillerSelector = document.querySelector("#diller");
             this.inputModelSelector = document.querySelector("#model");
             this.inputImgUrlSelector = document.querySelector("#image");
             this.inputBatterySelector = document.querySelector("#battery");
             this.inputDescriptionSelector = document.querySelector("#desc");
+
+            this.description = document.querySelector(".description");
         }
 
         init() {
@@ -67,20 +70,68 @@ window.addEventListener("load", function () {
                         this.inputDillerSelector.value, this.inputModelSelector.value, this.inputImgUrlSelector.value, this.inputBatterySelector.value, this.inputDescriptionSelector.value, this.selectorList);
                     this.addPhone(phone);
                     phone.asElement();
+                    //clear inputs
+                    this.inputDillerSelector.value = "";
+                    this.inputModelSelector.value = "";
+                    this.inputImgUrlSelector.value = "";
+                    this.inputBatterySelector.value = "";
+                    this.inputDescriptionSelector.value = "";
+
                     this.updateView();
                 }
             })
         }
 
-        //finished below
-        viewPhone() {
-            let onOff = true;
-            let btn = document.querySelector(".detailsBtn");
-            btn.addEventListener("click", (e) => {
+        viewPhoneBtn() {
+            this.selectorList.addEventListener("click", (e) => {
                 if (e.target.closest(".detailsBtn")) {
-                    alert("sdadsd");
+                    let index = e.target.closest(".phone").getAttribute("data-index");
+                    this.showPhone(index);
                 }
             })
+        }
+
+        showPhone(index) {
+            this.description.innerHTML = "";
+
+            let phoneHeader = document.createElement("div");
+            phoneHeader.className = "phoneHeader";
+            //add image
+            let image = document.createElement("img");
+            image.setAttribute("src", `${this.phones[index].imageUrl}`);
+            image.setAttribute("alt", "phone");
+            phoneHeader.appendChild(image);
+            //add info
+            let phoneInfo = document.createElement("div");
+            phoneInfo.className = "phoneInfo";
+            let phoneInfoElement = `
+                    <div class="dillerInfo">
+                        <p style="font-weight: bold">diller: </p>
+                        <p style="text-align: right">${this.phones[index].diller}</p>
+                    </div>
+                    <div class="modelInfo">
+                        <p style="font-weight: bold">model: </p>
+                        <p style="text-align: right">${this.phones[index].model}</p>
+                    </div>
+                    <div class="batteryInfo">
+                        <p style="font-weight: bold">battery: </p>
+                        <p style="text-align: right">${this.phones[index].battery}</p>
+                    </div>
+                </div>
+            `;
+            phoneInfo.innerHTML = phoneInfoElement;
+            phoneHeader.appendChild(phoneInfo);
+            //add description
+            let descriptionInfo = document.createElement("div");
+            descriptionInfo.className = "descriptionInfo";
+            let descriptionInfoElement = `
+                <p style="font-weight: bold">description: </p>
+                <p>${this.phones[index].description}</p>
+            `;
+            descriptionInfo.innerHTML = descriptionInfoElement;
+            //add all
+            this.description.appendChild(phoneHeader);
+            this.description.appendChild(descriptionInfo);
         }
 
         updateView() {
@@ -90,7 +141,7 @@ window.addEventListener("load", function () {
                 phoneElem.dataset.index = i;
                 this.selectorList.appendChild(phoneElem);
             });
-            this.viewPhone();
+            this.viewPhoneBtn();
         }
 
         removePhone(index) {

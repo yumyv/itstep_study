@@ -1,9 +1,10 @@
 body {
     margin: 0;
+    background: #e0f7fa;
 }
 
 main {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 1200px;
 }
 
@@ -15,6 +16,7 @@ section {
 }
 
 article {
+    border-radius: 10px;
     padding: 10px;
     width: 20%;
     background: #00acc1;
@@ -24,10 +26,11 @@ article {
 }
 
 .addPhone .addTitle {
+    border-radius: 10px;
     margin-top: 10px;
     text-align: center;
     width: 90%;
-    background: #ffeb3b;
+    background: #fdd835;
     display: inline-block;
 }
 
@@ -36,11 +39,12 @@ article {
 }
 
 .addPhone .addBody {
+    border-radius: 10px;
     display: inline-block;
     text-align: left;
     padding: 10px;
     width: 90%;
-    background: #ffeb3b;
+    background: #fdd835;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -70,9 +74,11 @@ article {
 }
 
 .addPhone .addButton button {
+    cursor: pointer;
+    border-radius: 10px;
     padding: 10px;
     width: 40%;
-    background: #ffeb3b;
+    background: #fdd835;
     outline: none;
 }
 
@@ -81,11 +87,12 @@ article {
 }
 
 .phones .phone {
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
     display: inline-block;
     width: 120px;
-    background: #ffeb3b;
+    background: #fdd835;
 }
 
 .phones .phone img {
@@ -94,6 +101,8 @@ article {
 }
 
 .phones .phone .detailsBtn {
+    cursor: pointer;
+    border-radius: 10px;
     padding: 10px;
     width: 80px;
     color: white;
@@ -101,26 +110,40 @@ article {
     outline: none;
 }
 
+.description {
+    word-wrap: break-word;
+}
+
 .description .phoneHeader {
-    width: 100%;
     text-align: left;
+    position: relative;
 }
 
 .description .phoneHeader img {
-    width: 40%;
+    width: 50%;
 }
 
 .description .phoneHeader .phoneInfo {
+    border-radius: 10px;
+    position: relative;
+    right: -22px;
+    box-sizing: border-box;
+    font-weight: normal;
     width: 40%;
     padding: 10px;
     display: inline-block;
     vertical-align: top;
-    background: #ffeb3b;
+    background: #fdd835;
+}
+
+.description .phoneHeader .phoneInfo p {
+    margin: 0;
 }
 
 .description .descriptionInfo {
+    border-radius: 10px;
     margin-top: 10px;
-    background: #ffeb3b;
+    background: #fdd835;
     padding: 10px;
     text-align: left;
     font-weight: normal;

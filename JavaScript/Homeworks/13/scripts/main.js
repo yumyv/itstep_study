@@ -54,6 +54,10 @@ window.addEventListener("load", function () {
             this.inputImgUrlSelector = document.querySelector("#image");
             this.inputBatterySelector = document.querySelector("#battery");
             this.inputDescriptionSelector = document.querySelector("#desc");
+            this.contextMenuSelector = document.querySelector(".contextMenu");
+            this.contextMenuSelectorAsString = ".contextMenu";
+            this.contextShow = document.querySelector(".contextShow");
+            this.contextDelete = document.querySelector(".contextDelete");
 
             this.description = document.querySelector(".description");
         }
@@ -142,6 +146,40 @@ window.addEventListener("load", function () {
                 this.selectorList.appendChild(phoneElem);
             });
             this.viewPhoneBtn();
+            this.contextMenu(this.contextMenuSelectorAsString);
+        }
+
+        contextMenu(contextSelector) {
+            this.selectorList.addEventListener("contextmenu", (e)=> {
+                e.preventDefault();
+                if (e.target.closest(".phone")) {
+                    let index = e.target.closest(".phone").getAttribute("data-index");
+
+                    this.contextMenuSelector.classList.add("active");
+                    this.contextMenuSelector.style.left = e.clientX + "px";
+                    this.contextMenuSelector.style.top = e.clientY + "px";
+                    //show
+                    this.contextShow.addEventListener("click" , (e) => {
+                        this.showPhone(index);
+                        this.contextMenuSelector.classList.remove("active");
+                    });
+                    //delete
+                    this.contextDelete.addEventListener("click", (e)=> {
+                        this.removePhone(index);
+                        this.contextMenuSelector.classList.remove("active");
+                        this.description.innerHTML = "";
+                    });
+
+                    document.addEventListener("click", (e)=> {
+                        if (!e.target.matches(contextSelector)) {
+                            e.preventDefault();
+                            this.contextMenuSelector.classList.remove("active");
+                        }
+                    });
+
+
+                }
+            })
         }
 
         removePhone(index) {
